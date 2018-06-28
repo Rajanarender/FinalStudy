@@ -1,0 +1,59 @@
+same syntax:
+
+Smart pointers:
+unique_ptr<int>p1(new int);
+unique_ptr<int>p2=p1; //not allowed
+
+shared_ptr<int>p1(new int);
+shared_ptr<int>p2=p1; //not allowed
+shared ptr uses referral count
+=======================================================
+
+casting techniques:
+static_cast<int>(s1); //() is mandatory
+dynamic_cast<Base*>(d1); 
+reinterpret_cast<>(r1);
+const_cast<>(c1);
+=======================================================
+class templates:
+template<typename T>
+ (or)
+template<class T>
+
+func<int>(2); //func call
+
+class X
+{
+
+};
+
+X<int>obj(2); //Obj creation
+=======================================================
+STL[Standard Template Libraries]
+vector<int>v;
+deque<char>d;
+set<int>s;//unique elements
+multiset<int>ms;//duplicates allowed
+map<int>m;//unique [keys],duplicate values
+multimap<string,int>mm;//duplicates keys and values
+
+tuple<int,double,char>t(100,2.5,'B'); //C++11 feature
+                    //(or)
+auto t = make_tuple(100,2.5,'B'); //auto takes the data type from rvalue
+
+cout<<get<0>(t)<<endl;
+cout<<get<1>(t)<<endl;
+cout<<get<2>(t)<<endl;
+=======================================================
+
+
+
+
+
+
+
+
+
+
+
+

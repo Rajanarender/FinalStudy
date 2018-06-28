@@ -1,0 +1,13 @@
+man ASCII -command to get all ASCII values
+
+Raja?
+
+:%s/s1/s2/g - s1[string to be replaced],s2[new string],g[globally through out the file]
+
+vim xx.cpp -vi editor
+gcc xx.cpp-gcc compiler
+g++ xx.cpp -gcc compiler
+
+mkdir 
+chmod -R 777
+

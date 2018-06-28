@@ -1,0 +1,108 @@
+*********************************************************************
+Difference b/w Sequential and Associative containers
+Sequential:
+Container classes like vector,deque,list,forward_list
+Contiguous memory
+push and pop operations along with insert,erase API's
+
+Associative:
+Container classes like set,mutliset,map,multimap
+Non-contiguous memory
+No push and pop operations,use insert,erase API's 
+
+Difference b/w array and vector
+array:
+x[3]={2,4,6};
+=>size of array is fixed
+=>contiguous memory
+=>insertion,deletion operations is costly
+=>Elements access is done using index([])
+
+vector:
+vector<int>v;
+=>vector is called as dynamic array with variable size(size(),capacity(),reserve())
+=>contiguous memory
+=>insertion,deletion operations is easier using insert,erase API's
+=>Elements access is done using index([])
+*********************************************************************
+Difference b/w vector and deque
+vector:
+=>size is variable
+=>contiguous memory
+=>push and pop operations can be done only backward
+=>Elements access is done using index([]) and back() API
+
+deque:
+=>size is variable
+=>contiguous memory
+=>push and pop operations can be done only forward
+=>Elements access is done using front() API only and not index
+
+************************************************************************************
+Difference b/w vector and list[double linked list],forward_list[single linked list]
+vector:
+=>size is variable
+=>contiguous memory
+=>push and pop operations can be done only backward
+=>Elements access is done using index([]) and back() API
+
+list:
+=>size is variable
+=>Non-contiguous memory
+=>push and pop operations can be done at both directions(forward and backward)
+=>Elements access is done using front(),back() API and not index
+
+forward_list:
+=>size is variable
+=>Non-contiguous memory
+=>push and pop operations can be done only forward
+=>Elements access is done using front()API and not index
+************************************************************************************
+Difference b/w vector and set,multiset
+vector:
+=>size is variable
+=>contiguous memory
+=>sequential container
+=>vector elements are not arranged in any particular order
+=>push and pop operations can be done only backward
+=>Elements access is done using index([]) and back() API
+
+set:
+=>size is variable
+=>Non-contiguous memory
+=>Associative container
+=>Set has its elements arranged in ASC order by default
+=>Set doesnot allow Duplicate elements
+=>Elements access is done using front(),back() API and not index
+
+
+multiset:
+=>same as set but allows duplicate elements 
+************************************************************************************
+Difference b/w vector and map,multimap
+vector:
+=>size is variable
+=>contiguous memory
+=>sequential container
+=>push and pop operations can be done only backward
+=>Elements access is done using index([]) and back() API
+
+map:
+=>size is variable
+=>Non-contiguous memory
+=>Associative container having 2 elements as KEY-VALUE pair
+=>Set has its KEY elements arranged in ASC order by default
+=>Set doesnot allow Duplicate KEY elements,but allows duplicate values
+=>insertion,deletion operations is done using insert,erase API's
+=>Elements access is done using index
+
+multimap:
+=>same as map but allows duplicate KEY-VALUE pairs
+=>Elements access cannot use index(V.V.Imp)
+
+************************************************************************************
+
+
+
+
+
